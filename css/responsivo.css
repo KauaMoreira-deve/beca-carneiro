@@ -1,0 +1,354 @@
+@media (max-width: 1024px) {
+    body {
+        padding-top: 92px;
+    }
+
+    .topo {
+        min-height: 92px;
+        padding: 16px 24px;
+    }
+
+    .topo-logo img {
+        width: 170px;
+    }
+
+    .home,
+    .home video {
+        min-height: calc(100svh - 92px);
+        height: calc(100svh - 92px);
+    }
+
+    .galeria-fts {
+        padding-bottom: 18px;
+    }
+
+    .galeria-fts img {
+        border-radius: 14px;
+    }
+
+    .sobre-intro {
+        padding: 30px 22px;
+    }
+
+    .hero-sobre {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding-top: 24px;
+    }
+
+    .frame-scene {
+        min-height: auto;
+    }
+
+    .model-carousel {
+        max-width: 900px;
+        min-height: 590px;
+    }
+
+    .model-slide {
+        flex-basis: min(490px, 70vw);
+    }
+
+    .modelo-3d {
+        width: 68%;
+    }
+}
+
+@media (max-width: 760px) {
+    .galeria h2,
+    .sobre h2 {
+        margin-bottom: 20px;
+        font-size: clamp(42px, 13vw, 58px);
+    }
+
+    .galeria-fts .slick-slide {
+        padding: 0 5px;
+    }
+
+    .galeria-fts img {
+        aspect-ratio: 0.78 / 1;
+    }
+
+    .sobre {
+        width: min(100% - 28px, 620px);
+    }
+
+    .sobre-destaque {
+        line-height: 1.22;
+    }
+
+    .botao-galeria {
+        border-radius: 34px;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        padding-top: 92px;
+    }
+
+    .topo {
+        min-height: 84px;
+        padding: 14px 16px;
+    }
+
+    .topo-logo img {
+        width: 140px;
+    }
+
+    .galeria-imersiva {
+        width: min(100% - 16px, 100%);
+        padding: 14px 0 38px;
+    }
+
+    .model-carousel {
+        min-height: min(118vw, 520px);
+        overflow: hidden;
+        transform: none !important;
+    }
+
+    .model-track {
+        gap: 18px;
+    }
+
+    .model-slide {
+        flex-basis: min(82vw, 390px);
+        opacity: 0;
+        transform: scale(0.82);
+    }
+
+    .model-slide.is-active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .frame-inner {
+        border-radius: 18px;
+    }
+
+    .modelo-3d {
+        top: 7%;
+        width: 78%;
+        height: 80%;
+    }
+
+    .frame-nav {
+        width: 52px;
+        height: 52px;
+        top: 48%;
+    }
+
+    .frame-nav span {
+        font-size: 30px;
+    }
+
+    .frame-scene {
+        flex-direction: column;
+        gap: 14px;
+        transform: none !important;
+    }
+
+    .frame-stage,
+    .scene-glow {
+        transform: none !important;
+    }
+
+    .frame-nav-prev {
+        left: 8px;
+    }
+
+    .frame-nav-next {
+        right: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 88px;
+    }
+
+    .topo {
+        min-height: 88px;
+        padding: 14px 16px;
+    }
+
+    .topo img {
+        width: 140px;
+    }
+
+    .topo-menu {
+        gap: 14px;
+    }
+
+    .topo-menu a {
+        font-size: 20px;
+    }
+
+    .home {
+        min-height: calc(100vh - 88px);
+    }
+
+    .home video {
+        height: calc(100vh - 88px);
+    }
+
+    .galeria {
+        padding-top: 56px;
+    }
+
+    .sobre {
+        margin-top: 62px;
+    }
+
+    .sobre-intro {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .sobre p {
+        font-size: 21px;
+    }
+
+    .botao {
+        padding: 92px 16px 34px;
+    }
+
+    .botao-galeria {
+        width: min(100%, 420px);
+        gap: 6px;
+        padding: 24px 22px;
+    }
+
+    .botao-kicker {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+    }
+
+    .botao-galeria strong {
+        font-size: clamp(28px, 10vw, 40px);
+        letter-spacing: 0.08em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 78px;
+    }
+
+    .topo {
+        min-height: 74px;
+        padding: 12px 14px;
+    }
+
+    .topo-logo img {
+        width: 118px;
+    }
+
+    .model-carousel {
+        min-height: min(124vw, 470px);
+    }
+
+    .model-slide {
+        flex-basis: min(88vw, 340px);
+    }
+
+    .modelo-3d {
+        top: 8%;
+        width: 82%;
+        height: 78%;
+    }
+
+    .frame-nav {
+        width: 44px;
+        height: 44px;
+        top: 47%;
+    }
+
+    .frame-nav span {
+        font-size: 26px;
+    }
+
+    .frame-meta-label {
+        padding: 7px 10px;
+        font-size: 12px;
+        letter-spacing: 0.14em;
+    }
+
+    .frame-model-name {
+        font-size: 28px;
+    }
+
+    .frame-model-count {
+        font-size: 13px;
+    }
+
+    .carousel-dots {
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .carousel-dots span {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        padding-top: 76px;
+    }
+
+    .topo {
+        min-height: 76px;
+        padding: 12px 14px;
+    }
+
+    .topo img {
+        width: 118px;
+    }
+
+    .home,
+    .home video {
+        min-height: calc(100svh - 76px);
+        height: calc(100svh - 76px);
+    }
+
+    .galeria {
+        padding-top: 46px;
+    }
+
+    .sobre-intro {
+        padding: 12px 4px;
+    }
+
+    .sobre p {
+        font-size: 19px;
+    }
+
+    .botao {
+        padding: 68px 14px 30px;
+    }
+
+    .botao-galeria {
+        padding: 22px 16px;
+        border-radius: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .model-slide {
+        flex-basis: 90vw;
+    }
+
+    .model-carousel {
+        min-height: 430px;
+    }
+
+    .frame-nav-prev {
+        left: 2px;
+    }
+
+    .frame-nav-next {
+        right: 2px;
+    }
+}
