@@ -6,70 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beca Carneiro | Galeria</title>
     <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/responsivo.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
-    <header class="topo">
-        <a class="topo-logo" href="index.html" aria-label="Voltar para a página inicial">
-            <img src="assets/BECA-preto.png" alt="Beca Carneiro">
-        </a>
+    <main class="galeria-imersiva" aria-label="Galeria da colecao">
        
-    </header>
-
-    <main class="galeria-imersiva">
-        <section class="hero-sobre">
-            
-
-            <div class="frame-scene">
-                <div class="scene-glow glow-left"></div>
-                <div class="scene-glow glow-right"></div>
-
-                <div class="frame-stage">
-                    <div class="frame-inner">
-                        <div class="frame-ambient"></div>
-                        <div class="exposicao-base"></div>
-                    </div>
-
-                    <img class="frame-image" src="assets/moldura.jpeg" alt="Moldura decorativa dourada">
-
-                    <div class="modelo-overlay">
-                        <model-viewer class="modelo-3d" src="assets/2fashion dress 3d model.glb"
-                            alt="Modelo 3D da coleção" auto-rotate camera-controls shadow-intensity="1.6"
-                            exposure="1.1" interaction-prompt="none" disable-pan camera-orbit="0deg 80deg auto"
-                            min-camera-orbit="auto 48deg auto" max-camera-orbit="auto 98deg auto" disable-zoom
-                            field-of-view="32deg"></model-viewer>
-                    </div>
-
-                    <button class="frame-nav frame-nav-prev" type="button" data-model-nav="-1"
-                        aria-label="Modelo anterior">
-                        <span>&lsaquo;</span>
-                    </button>
-
-                    <button class="frame-nav frame-nav-next" type="button" data-model-nav="1"
-                        aria-label="Próximo modelo">
-                        <span>&rsaquo;</span>
-                    </button>
-                </div>
-
-                <div class="frame-meta">
-                    <span class="frame-meta-label">Galeria 3D</span>
-                    <strong class="frame-model-name">Look 01</strong>
-                    <small class="frame-model-count">1 / 1</small>
-                    <div class="carousel-dots" aria-hidden="true"></div>
-                </div>
-
-               
-                
-            </div>
+        <section class="look-info" aria-labelledby="look-atual">
+            <p class="look-kicker">Galeria</p>
+            <h1 id="look-atual">Look 01</h1>
+            <span class="linha-decorativa" aria-hidden="true"></span>
         </section>
 
-        
-    </main>
+        <section class="palco-3d" aria-label="Modelo 3D selecionado">
+            <model-viewer id="modelo-principal" class="modelo-principal"
+                src="assets/Meshy_AI_Burgundy_Draped_Tunic_0516040717_texture.glb" alt="Modelo 3D do Look 01"
+                shadow-intensity="1.6" exposure="1.05" interaction-prompt="none"
+                disable-pan disable-zoom camera-orbit="0deg 78deg auto"
+                min-camera-orbit="0deg 78deg auto" max-camera-orbit="0deg 78deg auto"
+                field-of-view="29deg"></model-viewer>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="js/sobre.js?v=20260502"></script>
+        <aside class="contador" aria-label="Look atual">
+            <span id="contador-atual">01</span>
+            <span>08</span>
+        </aside>
+
+        <aside class="looks-lista" aria-label="Lista de looks">
+
+            
+            <button class="look-card ativo" type="button" data-look-index="0"
+                data-model-src="assets/Meshy_AI_Burgundy_Draped_Tunic_0516040717_texture.glb" data-look-name="Look 01">
+                <span>Look 01</span>
+                <model-viewer src="assets/Meshy_AI_Burgundy_Draped_Tunic_0516040717_texture.glb"
+                    alt="Miniatura 3D do Look 01" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+
+            <button class="look-card" type="button" data-look-index="1"
+                data-model-src="assets/Meshy_AI_Costas_Denim_Lace_Up__0516035358_texture.glb" data-look-name="Look 02">
+                <span>Look 02</span>
+                <model-viewer src="assets/Meshy_AI_Costas_Denim_Lace_Up__0516035358_texture.glb"
+                    alt="Miniatura 3D do Look 02" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+
+            <button class="look-card" type="button" data-look-index="2"
+                data-model-src="assets/Meshy_AI_Crimson_Lace_and_Pink_0516042011_texture.glb" data-look-name="Look 03">
+                <span>Look 03</span>
+                <model-viewer src="assets/Meshy_AI_Crimson_Lace_and_Pink_0516042011_texture.glb"
+                    alt="Miniatura 3D do Look 03" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+
+            <button class="look-card" type="button" data-look-index="3"
+                data-model-src="assets/Meshy_AI_Pearl_Trim_Pink_Palaz_0516031343_texture.glb" data-look-name="Look 04">
+                <span>Look 04</span>
+                <model-viewer src="assets/Meshy_AI_Pearl_Trim_Pink_Palaz_0516031343_texture.glb"
+                    alt="Miniatura 3D do Look 04" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+
+            <button class="look-card" type="button" data-look-index="4"
+                data-model-src="assets/Meshy_AI_Navy_Lace_Yoke_Top_wi_0516034803_texture.glb" data-look-name="Look 05">
+                <span>Look 05</span>
+                <model-viewer src="assets/Meshy_AI_Navy_Lace_Yoke_Top_wi_0516034803_texture.glb"
+                    alt="Miniatura 3D do Look 05" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+
+            <button class="look-card" type="button" data-look-index="5"
+                data-model-src="assets/Meshy_AI_Front_View_Outfit_0516035830_texture.glb" data-look-name="Look 06">
+                <span>Look 06</span>
+                <model-viewer src="assets/Meshy_AI_Front_View_Outfit_0516035830_texture.glb"
+                    alt="Miniatura 3D do Look 06" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+
+            <button class="look-card" type="button" data-look-index="6"
+                data-model-src="assets/Meshy_AI_Crimson_Leather_and_C_0516040229_texture.glb" data-look-name="Look 07">
+                <span>Look 07</span>
+                <model-viewer src="assets/Meshy_AI_Crimson_Leather_and_C_0516040229_texture.glb"
+                    alt="Miniatura 3D do Look 07" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+            
+            <button class="look-card" type="button" data-look-index="7"
+                data-model-src="assets/Meshy_AI_Front_View_Pearl_Embe_0516041201_texture.glb" data-look-name="Look 08">
+                <span>Look 08</span>
+                <model-viewer src="assets/Meshy_AI_Front_View_Pearl_Embe_0516041201_texture.glb"
+                    alt="Miniatura 3D do Look 08" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+            </button>
+
+            <div class="setas">
+                <button type="button" data-look-nav="-1" aria-label="Look anterior">&lt;</button>
+                <button type="button" data-look-nav="1" aria-label="Proximo look">&gt;</button>
+            </div>
+        </aside>
+    </main>
+    <script src="js/sobre.js"></script>
 </body>
 
 </html>
