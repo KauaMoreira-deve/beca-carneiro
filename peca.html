@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça | Coleção 001</title>
+    <meta name="description" content="Detalhes da peça da Coleção 001 Beca Carneiro.">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+    <header class="topo">
+        <a class="topo-logo" href="index.html" aria-label="Voltar para a página inicial">
+            <img src="assets/BECA-preto.png" alt="Beca Carneiro">
+        </a>
+        <a class="topo-wishlist" href="wishlist.html">Wishlist <span data-wishlist-count>0</span></a>
+    </header>
+
+    <main class="pagina-peca">
+        <a class="voltar-colecao" href="colecao-001.html">← Voltar para Coleção 001</a>
+
+        <section class="detalhe-peca" aria-live="polite">
+            <div class="peca-carrossel">
+                <div class="peca-imagem-principal">
+                    <div class="peca-slides"></div>
+                </div>
+                <div class="peca-miniaturas" aria-label="Miniaturas da peça"></div>
+            </div>
+
+            <aside class="peca-info">
+                <p class="peca-marca">Beca Carneiro</p>
+                <h1 id="peca-titulo">Peça 001</h1>
+                <p id="peca-descricao">
+                    Peça da Coleção 001, criada a partir do conceito Brasilidades e Tela Divina.
+                </p>
+                <dl class="peca-detalhes">
+                    <div>
+                        <dt>Coleção</dt>
+                        <dd>001</dd>
+                    </div>
+                    <div>
+                        <dt>Categoria</dt>
+                        <dd>Look autoral</dd>
+                    </div>
+                    <div>
+                        <dt>Disponibilidade</dt>
+                        <dd>Wishlist</dd>
+                    </div>
+                </dl>
+                <button class="wishlist-btn wishlist-detalhe" type="button" data-wishlist-button>Wishlist</button>
+            </aside>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/peca.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | Beca Carneiro</title>
+    <meta name="description" content="Peças salvas na Wishlist da Coleção 001 Beca Carneiro.">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+    <header class="topo">
+        <a class="topo-logo" href="index.html" aria-label="Voltar para a página inicial">
+            <img src="assets/BECA-preto.png" alt="Beca Carneiro">
+        </a>
+        <a class="topo-wishlist" href="wishlist.html" aria-current="page">Wishlist <span data-wishlist-count>0</span></a>
+    </header>
+
+    <main class="pagina-wishlist">
+        <section class="colecao-hero">
+            <p>Coleção 001</p>
+            <h1>Wishlist</h1>
+        </section>
+
+        <section class="wishlist-vazia" data-wishlist-empty hidden>
+            <p>Sua wishlist ainda está vazia.</p>
+            <a class="voltar-colecao" href="colecao-001.html">← Ver peças da coleção</a>
+        </section>
+
+        <section class="wishlist-grid" data-wishlist-list aria-label="Peças salvas"></section>
+    </main>
+
+    <script src="js/wishlist.js"></script>
+</body>
+
+</html>
