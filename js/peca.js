@@ -1,7 +1,7 @@
 const pecas = {
   1: {
     titulo: "Peça 001",
-    descricao: "Look da Coleção 001 com composição visual pensada para traduzir a delicadeza da natureza em forma, textura e presença.",
+    
     imagens: [
       "assets/looks1/WhatsApp Image 2026-05-26 at 21.13.16 (1).jpeg",
       "assets/looks1/WhatsApp Image 2026-05-26 at 21.13.16.jpeg",
@@ -11,7 +11,7 @@ const pecas = {
   },
   2: {
     titulo: "Peça 002",
-    descricao: "Look da Coleção 001 com leitura contemporânea das Brasilidades, valorizando contraste, acabamento e movimento.",
+    
     imagens: [
       "assets/looks2/WhatsApp Image 2026-05-26 at 21.13.17 (1).jpeg",
       "assets/looks2/WhatsApp Image 2026-05-26 at 21.13.17.jpeg",
@@ -21,7 +21,7 @@ const pecas = {
   },
   3: {
     titulo: "Peça 003",
-    descricao: "Look da Coleção 001 desenvolvido para destacar a força simbólica das formas naturais e da criação divina.",
+   
     imagens: [
       "assets/looks3/WhatsApp Image 2026-05-26 at 21.13.19 (1).jpeg",
       "assets/looks3/WhatsApp Image 2026-05-26 at 21.13.19.jpeg"
@@ -29,7 +29,7 @@ const pecas = {
   },
   4: {
     titulo: "Peça 004",
-    descricao: "Look da Coleção 001 com camadas visuais inspiradas em cor, fauna, flora e na expressão artística da biodiversidade brasileira.",
+    
     imagens: [
       "assets/looks4/WhatsApp Image 2026-05-26 at 21.13.23 (1).jpeg",
       "assets/looks4/WhatsApp Image 2026-05-26 at 21.13.23.jpeg",
@@ -39,7 +39,7 @@ const pecas = {
   },
   5: {
     titulo: "Peça 005",
-    descricao: "Look da Coleção 001 criado para unir presença, textura e uma leitura sensível do tema Tela Divina.",
+   
     imagens: [
       "assets/looks5/WhatsApp Image 2026-05-26 at 21.13.24 (1).jpeg",
       "assets/looks5/WhatsApp Image 2026-05-26 at 21.13.24.jpeg",
@@ -49,7 +49,7 @@ const pecas = {
   },
   6: {
     titulo: "Peça 006",
-    descricao: "Look da Coleção 001 com foco em proporção, composição e detalhes que evocam a natureza como obra de arte.",
+    
     imagens: [
       "assets/looks6/WhatsApp Image 2026-05-26 at 21.13.26.jpeg",
       "assets/looks6/WhatsApp Image 2026-05-26 at 21.13.27 (1).jpeg",
@@ -59,7 +59,7 @@ const pecas = {
   },
   7: {
     titulo: "Peça 007",
-    descricao: "Look da Coleção 001 que explora contraste e fluidez para representar a riqueza visual das Brasilidades.",
+    
     imagens: [
       "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.29 (1).jpeg",
       "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.29.jpeg",
@@ -69,7 +69,7 @@ const pecas = {
   },
   8: {
     titulo: "Peça 008",
-    descricao: "Look da Coleção 001 com detalhes visuais que conectam moda, natureza e expressão simbólica.",
+    
     imagens: [
       "assets/looks8/WhatsApp Image 2026-05-26 at 21.13.31 (1).jpeg",
       "assets/looks8/WhatsApp Image 2026-05-26 at 21.13.31.jpeg",
@@ -79,7 +79,7 @@ const pecas = {
   },
   9: {
     titulo: "Peça 009",
-    descricao: "Look da Coleção 001 com acabamento visual voltado para a ideia de biodiversidade como inspiração central.",
+    
     imagens: [
       "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.30 (1).jpeg",
       "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.30.jpeg",
@@ -89,7 +89,7 @@ const pecas = {
   },
   10: {
     titulo: "Peça 010",
-    descricao: "Look da Coleção 001 criado para finalizar a sequência com presença, textura e identidade autoral.",
+    
     imagens: [
       "assets/looks10/WhatsApp Image 2026-05-26 at 21.13.33 (1).jpeg",
       "assets/looks10/WhatsApp Image 2026-05-26 at 21.13.33.jpeg"

@@ -55,6 +55,7 @@
 
     .galeria-fts img {
         border-radius: 14px;
+        width: min(100%, 300px);
     }
 
     .sobre-intro {
@@ -152,6 +153,14 @@
 
     .galeria-fts img {
         aspect-ratio: 0.78 / 1;
+        width: min(100%, 280px);
+    }
+
+    .carrossel-label {
+        width: min(100% - 28px, 720px);
+        margin-bottom: 8px;
+        font-size: 11px;
+        letter-spacing: 0.18em;
     }
 
     .sobre {
@@ -190,6 +199,21 @@
 
     .wishlist-btn::before {
         font-size: 22px;
+    }
+
+    footer {
+        width: min(100% - 28px, 720px);
+        margin-top: 54px;
+        padding-top: 30px;
+    }
+
+    .footer-logos {
+        align-items: center;
+        gap: 14px;
+    }
+
+    .footer-logos h2 {
+        font-size: clamp(18px, 4vw, 24px);
     }
 
 }
@@ -237,6 +261,14 @@
 
     .galeria {
         padding-top: 56px;
+    }
+
+    .galeria-fts img {
+        width: min(100%, 250px);
+    }
+
+    .galeria-icons {
+        padding-top: 34px;
     }
 
     .galeria-imersiva {
@@ -441,6 +473,504 @@
         width: 64px;
     }
 }
+@media (min-width: 1600px) {
+    .galeria-imersiva {
+        background-size: 1600px auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    .home,
+    .home video {
+        min-height: calc(100svh - 92px);
+        height: calc(100svh - 92px);
+    }
+
+    .galeria-fts {
+        padding-bottom: 18px;
+    }
+
+    .palco-3d {
+        left: 62%;
+        bottom: clamp(88px, 11vh, 130px);
+        width: clamp(320px, 42vw, 500px);
+        height: 78vh;
+    }
+
+    .referencia-look {
+        left: clamp(250px, 25vw, 330px);
+        width: clamp(126px, 14vw, 170px);
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding-top: 92px;
+    }
+
+    .topo {
+        min-height: 92px;
+        padding: 16px 24px;
+    }
+
+    .topo-logo img {
+        width: 170px;
+    }
+
+    .topo-wishlist {
+        right: 18px;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+    }
+
+    .galeria-imersiva {
+        background-position: 48% center;
+        background-size: auto 86svh;
+    }
+
+    .galeria-fts img {
+        border-radius: 14px;
+        width: min(100%, 300px);
+    }
+
+    .sobre-intro {
+        padding: 30px 22px;
+    }
+
+    .looks-lista {
+        right: 22px;
+    }
+
+    .pagina-peca {
+        width: min(100% - 40px, 900px);
+    }
+
+    .detalhe-peca {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .peca-info {
+        position: static;
+        padding-top: 0;
+    }
+
+    .peca-marca {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .topo {
+        grid-template-columns: 1fr auto;
+    }
+
+    .menu-principal {
+        display: none;
+    }
+
+    .galeria-imersiva {
+        background-position: 46% center;
+        background-size: auto 82svh;
+    }
+
+    .palco-3d {
+        left: 58%;
+        bottom: 142px;
+        width: min(72vw, 440px);
+        height: 72vh;
+    }
+
+    .referencia-look {
+        left: 28px;
+        bottom: 260px;
+        width: 112px;
+    }
+
+    .looks-lista {
+        top: auto;
+        right: auto;
+        left: 28px;
+        bottom: 28px;
+        width: calc(100% - 56px);
+        display: flex;
+        align-items: end;
+        gap: 14px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 2px;
+    }
+
+    .look-card {
+        flex: 0 0 auto;
+        width: 82px;
+    }
+
+    .look-card model-viewer {
+        width: 80px;
+    }
+
+    .contador {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .galeria h2,
+    .sobre h2 {
+        margin-bottom: 20px;
+        font-size: clamp(42px, 13vw, 58px);
+    }
+
+    .galeria-fts .slick-slide {
+        padding: 0 5px;
+    }
+
+    .galeria-fts img {
+        aspect-ratio: 0.78 / 1;
+        width: min(100%, 280px);
+    }
+
+    .carrossel-label {
+        width: min(100% - 28px, 720px);
+        margin-bottom: 8px;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+    }
+
+    .sobre {
+        width: min(100% - 28px, 620px);
+    }
+
+    .sobre-destaque {
+        line-height: 1.22;
+    }
+
+    .colecoes-acesso {
+        width: min(100% - 28px, 760px);
+        gap: 18px;
+    }
+
+    .colecao-card {
+        min-height: 112px;
+    }
+
+    .colecao-hero,
+    .pecas-grid,
+    .wishlist-grid {
+        width: min(100% - 28px, 720px);
+    }
+
+    .pecas-grid,
+    .wishlist-grid {
+        gap: 18px;
+    }
+
+    .wishlist-btn {
+        min-height: 68px;
+        padding: 12px 14px 14px;
+        font-size: 12px;
+    }
+
+    .wishlist-btn::before {
+        font-size: 22px;
+    }
+
+    footer {
+        width: min(100% - 28px, 720px);
+        margin-top: 54px;
+        padding-top: 30px;
+    }
+
+    .footer-logos {
+        align-items: center;
+        gap: 14px;
+    }
+
+    .footer-logos h2 {
+        font-size: clamp(18px, 4vw, 24px);
+    }
+
+}
+
+@media (max-width: 620px) {
+    body {
+        padding-top: 88px;
+    }
+
+    .topo {
+        min-height: 88px;
+        padding: 14px 16px;
+    }
+
+    .topo-logo img,
+    .topo img {
+        width: 140px;
+    }
+
+    .topo-wishlist {
+        right: 12px;
+    }
+
+    .topo-wishlist span {
+        min-width: 20px;
+        min-height: 20px;
+        margin-left: 2px;
+    }
+
+    .topo-menu {
+        gap: 14px;
+    }
+
+    .topo-menu a {
+        font-size: 20px;
+    }
+
+    .home {
+        min-height: calc(100svh - 88px);
+    }
+
+    .home video {
+        height: calc(100svh - 88px);
+    }
+
+    .galeria {
+        padding-top: 56px;
+    }
+
+    /* keep default gallery sizing from global styles; remove local scale/translate overrides */
+
+    .galeria-icons {
+        padding-top: 34px;
+    }
+
+    .galeria-imersiva {
+        background-position: 43% center;
+        background-size: auto 78svh;
+    }
+
+    .palco-3d {
+        left: 60%;
+        bottom: 150px;
+        width: min(76vw, 340px);
+        height: 62vh;
+    }
+
+    .referencia-look {
+        left: 22px;
+        bottom: 268px;
+        width: 92px;
+        padding: 5px;
+    }
+
+    .look-info {
+        left: 22px;
+        bottom: 150px;
+        max-width: 270px;
+    }
+
+    .look-kicker {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .look-info h1 {
+        font-size: 54px;
+    }
+
+    .linha-decorativa {
+        width: 210px;
+        margin-top: 22px;
+    }
+
+    .looks-lista {
+        left: 20px;
+        bottom: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .look-card {
+        width: 70px;
+    }
+
+    .look-card span {
+        font-size: 12px;
+    }
+
+    .look-card model-viewer {
+        width: 68px;
+    }
+
+    .setas {
+        display: none;
+    }
+
+    .sobre {
+        margin-top: 62px;
+    }
+
+    .sobre-intro {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+    }
+
+    .colecoes-acesso {
+        margin-top: 54px;
+    }
+
+    .colecao-card {
+        min-height: 104px;
+        padding: 22px 16px;
+        box-shadow:
+            inset 0 0 0 4px #060606,
+            inset 0 0 0 6px rgba(151, 139, 116, 0.38),
+            0 22px 54px rgba(0, 0, 0, 0.3);
+    }
+
+    .colecao-card::before,
+    .colecao-card::after {
+        inset: 12px;
+    }
+
+    .colecao-hero {
+        padding: 46px 0 28px;
+    }
+
+    .colecao-hero h1 {
+        font-size: clamp(54px, 16vw, 86px);
+    }
+
+    .colecao-hero p {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+    }
+
+    .pagina-peca {
+        width: min(100% - 24px, 620px);
+        padding-top: 34px;
+    }
+
+    .voltar-colecao {
+        margin-bottom: 20px;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+    }
+
+    .carrossel-seta {
+        width: 38px;
+        height: 38px;
+        font-size: 28px;
+    }
+
+    .carrossel-anterior {
+        left: 10px;
+    }
+
+    .carrossel-proxima {
+        right: 10px;
+    }
+
+    .peca-miniaturas {
+        margin-top: 8px;
+    }
+
+    .peca-miniaturas .slick-slide {
+        padding: 0 4px;
+    }
+
+    .peca-info h1 {
+        font-size: clamp(48px, 15vw, 70px);
+    }
+
+    .peca-info p {
+        font-size: 15px;
+    }
+
+    .wishlist-vazia {
+        width: min(100% - 28px, 620px);
+        padding: 34px 18px;
+    }
+
+    footer {
+        gap: 14px;
+        padding-bottom: 26px;
+    }
+
+    .footer-logos {
+        flex-direction: column;
+    }
+
+    .footer-logos a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .footer-logos img {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer p {
+        max-width: 260px;
+        font-size: 11px;
+        letter-spacing: 0.05em;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 78px;
+    }
+
+    .topo {
+        min-height: 74px;
+        padding: 12px 14px;
+    }
+
+    .topo-logo img,
+    .topo img {
+        width: 118px;
+    }
+
+    .galeria-imersiva {
+        background-position: 42% center;
+        background-size: auto 76svh;
+    }
+
+    .palco-3d {
+        left: 61%;
+        bottom: 138px;
+        width: min(82vw, 320px);
+        height: 60vh;
+    }
+
+    .referencia-look {
+        bottom: 250px;
+        width: 82px;
+    }
+
+    .look-info {
+        bottom: 140px;
+        max-width: 230px;
+    }
+
+    .look-info h1 {
+        font-size: clamp(26px, 11vw, 40px);
+    }
+
+    .look-card {
+        width: 66px;
+    }
+
+    .look-card model-viewer {
+        width: 64px;
+    }
+}
 
 @media (max-width: 420px) {
     body {
@@ -460,6 +990,15 @@
 
     .galeria {
         padding-top: 46px;
+    }
+
+    .galeria-fts img {
+        width: min(100%, 230px);
+    }
+
+    .carrossel-label {
+        width: min(100% - 20px, 420px);
+        font-size: 10px;
     }
 
     .galeria-imersiva {
@@ -485,7 +1024,7 @@
     }
 
     .look-info h1 {
-        font-size: 44px;
+        font-size: clamp(24px, 11vw, 36px);
     }
 
     .sobre-intro {
@@ -493,7 +1032,7 @@
     }
 
     .sobre p {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .colecoes-acesso {
@@ -524,7 +1063,7 @@
     }
 
     .pecas-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .wishlist-grid {
@@ -565,6 +1104,18 @@
 
     .pagina-wishlist {
         padding-bottom: 72px;
+    }
+
+    footer {
+        width: min(100% - 20px, 420px);
+        margin-top: 42px;
+        padding-top: 24px;
+    }
+
+    .footer-logos h2 {
+        max-width: 300px;
+        font-size: clamp(16px, 5vw, 20px);
+        line-height: 1.12;
     }
 
 }
@@ -609,6 +1160,11 @@
         font-size: 25px;
     }
 
+    .footer-logos h2 {
+        max-width: 260px;
+        font-size: 16px;
+    }
+
     .palco-3d {
         left: 63%;
         bottom: 124px;
@@ -625,16 +1181,14 @@
     }
 
     .look-info h1 {
-        font-size: 40px;
+        font-size: clamp(22px, 11vw, 34px);
     }
 
     .look-card {
         width: 60px;
     }
 
-    .look-card model-viewer {
-        width: 58px;
-    }
+   
 }
 
 @media (max-height: 720px) and (min-width: 700px) {
@@ -715,5 +1269,367 @@
 
     .look-card model-viewer {
         width: 62px;
+    }
+}
+
+@media (max-width: 620px) {
+    .pagina-peca {
+        width: min(100% - 20px, 560px);
+        padding-top: 22px;
+        padding-bottom: 56px;
+    }
+
+    .detalhe-peca {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .peca-imagem-principal {
+        max-height: 58svh;
+        background: #f7f6f2;
+    }
+
+    .peca-slides,
+    .peca-slides .slick-list,
+    .peca-slides .slick-track,
+    .peca-slides .slick-slide,
+    .peca-slides .slick-slide > div {
+        max-height: 58svh;
+    }
+
+    .peca-slides img {
+        width: 100%;
+        height: min(58svh, 430px);
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+
+    .peca-miniaturas {
+        margin-top: 8px;
+    }
+
+    .peca-miniaturas img {
+        height: 72px;
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
+
+    .peca-info {
+        position: static;
+        padding-top: 0;
+    }
+
+    .peca-marca {
+        margin-bottom: 10px;
+        padding-top: 16px;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+    }
+
+    .peca-info h1 {
+        margin-bottom: 10px;
+        font-size: clamp(38px, 12vw, 56px);
+        line-height: 0.92;
+    }
+
+    .peca-info p {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .peca-detalhes {
+        gap: 10px;
+        margin: 18px 0;
+    }
+
+    .peca-detalhes div {
+        padding-bottom: 10px;
+    }
+
+    .peca-detalhes dt,
+    .peca-detalhes dd {
+        font-size: 12px;
+    }
+
+    .wishlist-detalhe {
+        min-height: 62px;
+    }
+}
+
+@media (max-width: 420px) {
+    .pagina-peca {
+        width: min(100% - 16px, 420px);
+        padding-top: 18px;
+    }
+
+    .voltar-colecao {
+        margin-bottom: 14px;
+        font-size: 10px;
+    }
+
+    .peca-imagem-principal,
+    .peca-slides,
+    .peca-slides .slick-list,
+    .peca-slides .slick-track,
+    .peca-slides .slick-slide,
+    .peca-slides .slick-slide > div {
+        max-height: 52svh;
+    }
+
+    .peca-slides img {
+        height: min(52svh, 360px);
+    }
+
+    .peca-miniaturas img {
+        height: 58px;
+    }
+
+    .carrossel-seta {
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+    }
+
+    .carrossel-anterior {
+        left: 8px;
+    }
+
+    .carrossel-proxima {
+        right: 8px;
+    }
+
+    .peca-info h1 {
+        font-size: clamp(34px, 11vw, 48px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .pagina-peca {
+        width: min(100% - 32px, 760px);
+        padding-top: 28px;
+    }
+
+    .detalhe-peca {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .peca-carrossel,
+    .peca-info {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .peca-info {
+        position: static;
+        padding-top: 0;
+    }
+
+    .peca-imagem-principal,
+    .peca-slides,
+    .peca-slides .slick-list,
+    .peca-slides .slick-track,
+    .peca-slides .slick-slide,
+    .peca-slides .slick-slide > div {
+        height: clamp(390px, 62vw, 560px);
+        max-height: none;
+    }
+
+    .peca-slides img {
+        width: 100%;
+        height: clamp(390px, 62vw, 560px);
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 700px) {
+    .pagina-peca {
+        width: min(100% - 18px, 520px);
+        padding-top: 14px;
+        padding-bottom: 46px;
+    }
+
+    .voltar-colecao {
+        margin-bottom: 10px;
+        font-size: 10px;
+        letter-spacing: 0.06em;
+    }
+
+    .detalhe-peca {
+        gap: 16px;
+    }
+
+    .peca-imagem-principal,
+    .peca-slides,
+    .peca-slides .slick-list,
+    .peca-slides .slick-track,
+    .peca-slides .slick-slide,
+    .peca-slides .slick-slide > div {
+        height: clamp(245px, 78vw, 330px);
+    }
+
+    .peca-slides img {
+        height: clamp(245px, 78vw, 330px);
+        object-fit: contain;
+    }
+
+    .peca-miniaturas {
+        margin-top: 7px;
+    }
+
+    .peca-miniaturas .slick-slide {
+        padding: 0 3px;
+    }
+
+    .peca-miniaturas img {
+        height: clamp(48px, 16vw, 64px);
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
+
+    .carrossel-seta {
+        width: 30px;
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .carrossel-anterior {
+        left: 8px;
+    }
+
+    .carrossel-proxima {
+        right: 8px;
+    }
+
+    .peca-marca {
+        margin-bottom: 8px;
+        padding-top: 14px;
+        font-size: 10px;
+        letter-spacing: 0.14em;
+    }
+
+    .peca-info h1 {
+        margin-bottom: 8px;
+        font-size: clamp(34px, 11vw, 46px);
+        line-height: 0.95;
+    }
+
+    .peca-info p {
+        display: -webkit-box;
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 1.35;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .peca-detalhes {
+        gap: 8px;
+        margin: 14px 0;
+    }
+
+    .peca-detalhes div {
+        padding-bottom: 8px;
+    }
+
+    .peca-detalhes dt,
+    .peca-detalhes dd {
+        font-size: 11px;
+    }
+
+    .wishlist-detalhe {
+        min-height: 58px;
+    }
+}
+
+@media (max-width: 390px) {
+    .pagina-peca {
+        width: min(100% - 14px, 390px);
+    }
+
+    .peca-imagem-principal,
+    .peca-slides,
+    .peca-slides .slick-list,
+    .peca-slides .slick-track,
+    .peca-slides .slick-slide,
+    .peca-slides .slick-slide > div {
+        height: clamp(230px, 74vw, 295px);
+    }
+
+    .peca-slides img {
+        height: clamp(230px, 74vw, 295px);
+    }
+
+    .peca-miniaturas img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .pagina-peca,
+    .detalhe-peca,
+    .peca-carrossel,
+    .peca-imagem-principal,
+    .peca-info,
+    .peca-miniaturas,
+    .peca-slides {
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .peca-slides .slick-list,
+    .peca-miniaturas .slick-list {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .peca-slides .slick-track,
+    .peca-miniaturas .slick-track {
+        max-width: none;
+    }
+
+    .peca-slides .slick-slide,
+    .peca-miniaturas .slick-slide {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .topo {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    .topo-logo {
+        transform: translateX(-18px);
+    }
+
+    .topo-wishlist {
+        right: 8px;
+        max-width: 112px;
+        white-space: nowrap;
+    }
+
+    .pagina-peca {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .peca-miniaturas {
+        width: 100%;
     }
 }

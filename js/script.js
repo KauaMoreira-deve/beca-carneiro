@@ -1,7 +1,7 @@
-$('.galeria-fts').slick({
+$('.galeria-carrossel').slick({
   centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
+  centerPadding: '80px',
+  slidesToShow: 4,
   responsive: [
     {
       breakpoint: 1024,
