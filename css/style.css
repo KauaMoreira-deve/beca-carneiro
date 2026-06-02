@@ -200,6 +200,8 @@ body {
   letter-spacing: 0.22em;
   text-align: left;
   text-transform: uppercase;
+  margin-left: 100px;
+  
 }
 
 .galeria-fts .slick-slide {
@@ -213,10 +215,10 @@ body {
   object-fit: cover;
   display: block;
   border-radius: 18px;
-  filter: brightness(0.42) grayscale(0.18) contrast(1.08);
+  
   transform: scale(0.9);
-  opacity: 0.72;
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+  
+ 
   transition:
     filter .3s ease,
     opacity .3s ease,
@@ -224,12 +226,7 @@ body {
     box-shadow .3s ease;
 }
 
-.galeria-fts .slick-slide.slick-center img {
-  filter: brightness(1) grayscale(0.04) contrast(1.04);
-  transform: scale(1);
-  opacity: 1;
-  box-shadow: 0 38px 90px rgba(0, 0, 0, 0.44);
-}
+
 
 .galeria-fts .slick-prev:before,
 .galeria-fts .slick-next:before {

@@ -61,10 +61,10 @@ const pecas = {
     titulo: "Peça 007",
     
     imagens: [
-      "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.29 (1).jpeg",
-      "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.29.jpeg",
       "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.32 (1).jpeg",
-      "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.32.jpeg"
+      "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.32.jpeg",
+      "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.29 (1).jpeg",
+      "assets/looks7/WhatsApp Image 2026-05-26 at 21.13.29.jpeg"
     ]
   },
   8: {
@@ -81,10 +81,10 @@ const pecas = {
     titulo: "Peça 009",
     
     imagens: [
-      "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.30 (1).jpeg",
-      "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.30.jpeg",
       "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.31 (1).jpeg",
-      "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.31.jpeg"
+      "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.31.jpeg",
+      "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.30.jpeg",
+      "assets/looks9/WhatsApp Image 2026-05-26 at 21.13.30 (1).jpeg"
     ]
   },
   10: {
@@ -94,7 +94,8 @@ const pecas = {
       "assets/looks10/WhatsApp Image 2026-05-26 at 21.13.33 (1).jpeg",
       "assets/looks10/WhatsApp Image 2026-05-26 at 21.13.33.jpeg"
     ]
-  }
+  },
+ 
 };
 
 const params = new URLSearchParams(window.location.search);
